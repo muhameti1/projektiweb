@@ -8,8 +8,8 @@
     <title>Online Shop</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylep.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylep.css">
 
 </head>
 
@@ -21,10 +21,10 @@
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="shop.php">Shop</a></li>
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="fal fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
 
@@ -36,6 +36,19 @@
         </div>
     </section>
     <section id="page-header">
+        <style>
+            #page-header {
+                background-image: url(img/banner/b1.jpg);
+                width: 100%;
+                height: 40vh;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                padding: 14px;
+            }
+        </style>
         <h2>#Meow</h2>
         <p>Save more with cupons & up to 70% off! </p>
     </section>
@@ -56,7 +69,40 @@
                 ?>
                         <div class="col-sm">
                             <div class="card-body">
-                                <img src="admin/upload" <?php echo $row['menu_image']; ?> class="card-img-top" alt="Product Images">
+                                <img src="img/products/f1.jpg" <?php echo $row['menu_image']; ?> class="card-img-top" alt="Product Images">
+                                <h4 class="card-title"><?php echo $row['menu_title']; ?></h4>
+                                <h3 class="card-title"><?php echo $row['menu_body']; ?></h3>
+                                <p class="card-text">
+                                    <?php echo $row['id']; ?>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="card-body">
+                                <img src="img/products/f2.jpg" <?php echo $row['menu_image']; ?> class="card-img-top" alt="Product Images">
+                                <h4 class="card-title"><?php echo $row['menu_title']; ?></h4>
+                                <h3 class="card-title"><?php echo $row['menu_body']; ?></h3>
+                                <p class="card-text">
+                                    <?php echo $row['id']; ?>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="card-body">
+                                <img src="img/products/f3.jpg" <?php echo $row['menu_image']; ?> class="card-img-top" alt="Product Images">
+                                <h4 class="card-title"><?php echo $row['menu_title']; ?></h4>
+                                <h3 class="card-title"><?php echo $row['menu_body']; ?></h3>
+                                <p class="card-text">
+                                    <?php echo $row['id']; ?>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="card-body">
+                                <img src="img/products/f4.jpg" <?php echo $row['menu_image']; ?> class="card-img-top" alt="Product Images">
                                 <h4 class="card-title"><?php echo $row['menu_title']; ?></h4>
                                 <h3 class="card-title"><?php echo $row['menu_body']; ?></h3>
                                 <p class="card-text">
